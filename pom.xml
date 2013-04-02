@@ -81,7 +81,6 @@
 				</configuration>
 			</plugin>
 			
-			<!-- Github Maven Repo -->
 			<plugin>
 	            <groupId>com.github.github</groupId>
 	            <artifactId>site-maven-plugin</artifactId>
@@ -89,11 +88,12 @@
 	            <configuration>
 	                <message>Maven artifacts for ${project.version}</message>
 	                <noJekyll>true</noJekyll>
-	                <outputDirectory>${project.build.directory}repo</outputDirectory>
+	                <outputDirectory>${project.build.directory}/repo</outputDirectory>
 	                <branch>refs/heads/repo</branch>
 	                <includes><include>**/*</include></includes>
 	                <repositoryName>API</repositoryName>
 	                <repositoryOwner>BattleNight</repositoryOwner>
+	                <merge>true</merge>
 	            </configuration>
 	            <executions>
 	              <execution>
@@ -103,15 +103,15 @@
 	                <phase>deploy</phase>
 	              </execution>
 	            </executions>
-        	</plugin>
+	        </plugin>
 		</plugins>
 	</build>
 	
 	<!-- Distribution -->
 	<distributionManagement>
-	    <repository>
+		<repository>
 	        <id>internal.repo</id>
-	        <name>Maven API Repository</name>
+	        <name>BattleNight API Repo</name>
 	        <url>file://${project.build.directory}/repo</url>
 	    </repository>
 	</distributionManagement>
