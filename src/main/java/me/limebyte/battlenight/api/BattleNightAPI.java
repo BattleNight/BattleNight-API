@@ -15,6 +15,7 @@ public interface BattleNightAPI {
 
     public ArenaManager getArenaManager();
 
+    @Deprecated
     public Battle getBattle();
 
     public BattleManager getBattleManager();
