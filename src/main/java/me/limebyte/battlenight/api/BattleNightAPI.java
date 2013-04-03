@@ -1,6 +1,5 @@
 package me.limebyte.battlenight.api;
 
-import me.limebyte.battlenight.api.battle.Battle;
 import me.limebyte.battlenight.api.managers.ArenaManager;
 import me.limebyte.battlenight.api.managers.BattleManager;
 import me.limebyte.battlenight.api.managers.ClassManager;
@@ -14,9 +13,6 @@ import org.bukkit.entity.Player;
 public interface BattleNightAPI {
 
     public ArenaManager getArenaManager();
-
-    @Deprecated
-    public Battle getBattle();
 
     public BattleManager getBattleManager();
 
