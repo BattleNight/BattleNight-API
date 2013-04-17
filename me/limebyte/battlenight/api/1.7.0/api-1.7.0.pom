@@ -54,7 +54,7 @@
 	<!-- Build settings -->
 	<build>
 		<finalName>${project.name}</finalName>
-		<defaultGoal>clean package javadoc:javadoc deploy</defaultGoal>
+		<defaultGoal>clean package deploy</defaultGoal>
 		
 		<!-- Plugins -->
 		<plugins>
@@ -76,15 +76,19 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>2.9</version>
 				<configuration>
-					<phase>package</phase>
 					<reportOutputDirectory>${project.build.directory}/apidocs</reportOutputDirectory>
-					<destDir>apidocs</destDir>
+					<destDir>apidocs/apidocs</destDir>
 					<stylesheetfile>${basedir}/src/site/assets/css/javadoc.css</stylesheetfile>
 					<show>public</show>
-					<goals>
-	                  <goal>javadoc:javadoc</goal>
-	                </goals>
 				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>javadoc</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+				</executions>
 			</plugin>
 			
 			<plugin>
