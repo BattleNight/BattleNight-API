@@ -5,7 +5,7 @@
 	<name>BatttleNight API</name>
 	<groupId>me.limebyte.battlenight</groupId>
 	<artifactId>api</artifactId>
-	<version>1.7.0</version>
+	<version>1.7.0-SNAPSHOT</version>
 	<url>https://github.com/BattleNight/API</url>
 	<inceptionYear>2013</inceptionYear>
 	<description>API for the BattleNight plugin.</description>
@@ -76,31 +76,59 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>2.9</version>
 				<configuration>
+					<reportOutputDirectory>${project.build.directory}/javadocs</reportOutputDirectory>
+					<destDir>apidocs</destDir>
 					<stylesheetfile>${basedir}/src/site/assets/css/javadoc.css</stylesheetfile>
 					<show>public</show>
 				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>javadoc</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+				</executions>
 			</plugin>
 			
 			<plugin>
 	            <groupId>com.github.github</groupId>
 	            <artifactId>site-maven-plugin</artifactId>
 	            <version>0.7</version>
-	            <configuration>
-	                <message>Maven artifacts for ${project.version}</message>
-	                <noJekyll>true</noJekyll>
-	                <outputDirectory>${project.build.directory}/repo</outputDirectory>
-	                <branch>refs/heads/repo</branch>
-	                <includes><include>**/*</include></includes>
-	                <repositoryName>API</repositoryName>
-	                <repositoryOwner>BattleNight</repositoryOwner>
-	                <merge>true</merge>
-	            </configuration>
 	            <executions>
 	              <execution>
+	              	<id>repo</id>
+	              	<phase>deploy</phase>
+	              	<configuration>
+		                <message>Maven artifacts for ${project.version}</message>
+		                <noJekyll>true</noJekyll>
+		                <outputDirectory>${project.build.directory}/repo</outputDirectory>
+		                <branch>refs/heads/repo</branch>
+		                <includes><include>**/*</include></includes>
+		                <repositoryName>API</repositoryName>
+		                <repositoryOwner>BattleNight</repositoryOwner>
+		                <merge>true</merge>
+	            	</configuration>
 	                <goals>
 	                  <goal>site</goal>
 	                </goals>
-	                <phase>deploy</phase>
+	              </execution>
+	              <execution>
+	              	<id>javadoc</id>
+	              	<phase>deploy</phase>
+	              	<configuration>
+		                <message>Documentation for ${project.version}</message>
+		                <noJekyll>true</noJekyll>
+		                <outputDirectory>${project.build.directory}/javadocs</outputDirectory>
+		                <branch>refs/heads/gh-pages</branch>
+		                <includes><include>**/*</include></includes>
+		                <repositoryName>API</repositoryName>
+		                <repositoryOwner>BattleNight</repositoryOwner>
+		                <merge>false</merge>
+	            	</configuration>
+	                <goals>
+	                  <goal>site</goal>
+	                </goals>
 	              </execution>
 	            </executions>
 	        </plugin>
