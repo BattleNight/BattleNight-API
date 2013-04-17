@@ -54,7 +54,7 @@
 	<!-- Build settings -->
 	<build>
 		<finalName>${project.name}</finalName>
-		<defaultGoal>clean package deploy</defaultGoal>
+		<defaultGoal>clean package javadoc:javadoc deploy</defaultGoal>
 		
 		<!-- Plugins -->
 		<plugins>
