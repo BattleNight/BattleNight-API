@@ -2,18 +2,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<!-- Project information -->
-	<name>BatttleNight API</name>
-	<groupId>me.limebyte.battlenight</groupId>
-	<artifactId>api</artifactId>
-	<version>1.6.1-SNAPSHOT</version>
-	<url>https://github.com/BattleNight/API</url>
+	<name>BattleNight API</name>
+	<groupId>me.limebyte</groupId>
+	<artifactId>BattleNight-API</artifactId>
+	<version>1.7.1-SNAPSHOT</version>
+	<url>https://github.com/BattleNight/BattleNight-API</url>
 	<inceptionYear>2013</inceptionYear>
 	<description>API for the BattleNight plugin.</description>
 
 	<!-- Properties -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<githubRepo>BattleNight/API</githubRepo>
+		<githubRepo>BattleNight/BattleNight-API</githubRepo>
 		<github.global.server>github</github.global.server>
 	</properties>
 
@@ -76,32 +76,58 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>2.9</version>
 				<configuration>
-					<stylesheetfile>${basedir}/src/site/assets/css/javadoc.css</stylesheetfile>
+					<reportOutputDirectory>${project.build.directory}/javadocs</reportOutputDirectory>
+					<destDir>apidocs</destDir>
 					<show>public</show>
 				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>javadoc</goal>
+						</goals>
+						<phase>package</phase>
+					</execution>
+				</executions>
 			</plugin>
 			
 			<plugin>
 	            <groupId>com.github.github</groupId>
 	            <artifactId>site-maven-plugin</artifactId>
 	            <version>0.7</version>
-	            <configuration>
-	                <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
-	                <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
-	                <outputDirectory>${project.build.directory}/repo</outputDirectory> <!-- matches distribution management repository url above -->
-	                <branch>refs/heads/repo</branch>                       <!-- remote branch name -->
-	                <includes><include>**/*</include></includes>
-	                <repositoryName>API</repositoryName>      <!-- github repo name -->
-	                <repositoryOwner>BattleNight</repositoryOwner>    <!-- github username  -->
-	                <merge>true</merge>
-	            </configuration>
 	            <executions>
-	              <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
 	              <execution>
+	              	<id>repo</id>
+	              	<phase>deploy</phase>
+	              	<configuration>
+		                <message>Maven artifacts for ${project.name} v${project.version}.</message>
+		                <noJekyll>true</noJekyll>
+		                <outputDirectory>${project.build.directory}/repo</outputDirectory>
+		                <branch>refs/heads/repo</branch>
+		                <includes><include>**/*</include></includes>
+		                <repositoryName>BattleNight-API</repositoryName>
+		                <repositoryOwner>BattleNight</repositoryOwner>
+		                <merge>false</merge>
+	            	</configuration>
 	                <goals>
 	                  <goal>site</goal>
 	                </goals>
-	                <phase>deploy</phase>
+	              </execution>
+	              <execution>
+	              	<id>javadoc</id>
+	              	<phase>deploy</phase>
+	              	<configuration>
+		                <message>Documentation for ${project.name} v${project.version}.</message>
+		                <noJekyll>true</noJekyll>
+		                <outputDirectory>${project.build.directory}/javadocs</outputDirectory>
+		                <branch>refs/heads/gh-pages</branch>
+		                <includes><include>**/*</include></includes>
+		                <repositoryName>BattleNight-API</repositoryName>
+		                <repositoryOwner>BattleNight</repositoryOwner>
+		                <merge>false</merge>
+	            	</configuration>
+	                <goals>
+	                  <goal>site</goal>
+	                </goals>
 	              </execution>
 	            </executions>
 	        </plugin>
