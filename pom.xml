@@ -3,9 +3,9 @@
 
 	<!-- Project information -->
 	<name>BatttleNight API</name>
-	<groupId>me.limebyte.battlenight</groupId>
-	<artifactId>api</artifactId>
-	<version>1.7.0-SNAPSHOT</version>
+	<groupId>me.limebyte</groupId>
+	<artifactId>battlenight.api</artifactId>
+	<version>1.7.1-SNAPSHOT</version>
 	<url>https://github.com/BattleNight/API</url>
 	<inceptionYear>2013</inceptionYear>
 	<description>API for the BattleNight plugin.</description>
