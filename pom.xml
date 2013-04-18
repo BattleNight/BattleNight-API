@@ -2,18 +2,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<!-- Project information -->
-	<name>BatttleNight API</name>
+	<name>BattleNight API</name>
 	<groupId>me.limebyte</groupId>
-	<artifactId>battlenight.api</artifactId>
+	<artifactId>BattleNight-API</artifactId>
 	<version>1.7.1-SNAPSHOT</version>
-	<url>https://github.com/BattleNight/API</url>
+	<url>https://github.com/BattleNight/BattleNight-API</url>
 	<inceptionYear>2013</inceptionYear>
 	<description>API for the BattleNight plugin.</description>
 
 	<!-- Properties -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<githubRepo>BattleNight/API</githubRepo>
+		<githubRepo>BattleNight/BattleNight-API</githubRepo>
 		<github.global.server>github</github.global.server>
 	</properties>
 
@@ -99,14 +99,14 @@
 	              	<id>repo</id>
 	              	<phase>deploy</phase>
 	              	<configuration>
-		                <message>Maven artifacts for ${project.version}</message>
+		                <message>Maven artifacts for ${project.name} v${project.version}.</message>
 		                <noJekyll>true</noJekyll>
 		                <outputDirectory>${project.build.directory}/repo</outputDirectory>
 		                <branch>refs/heads/repo</branch>
 		                <includes><include>**/*</include></includes>
-		                <repositoryName>API</repositoryName>
+		                <repositoryName>BattleNight-API</repositoryName>
 		                <repositoryOwner>BattleNight</repositoryOwner>
-		                <merge>true</merge>
+		                <merge>false</merge>
 	            	</configuration>
 	                <goals>
 	                  <goal>site</goal>
@@ -116,12 +116,12 @@
 	              	<id>javadoc</id>
 	              	<phase>deploy</phase>
 	              	<configuration>
-		                <message>Documentation for ${project.version}</message>
+		                <message>Documentation for ${project.name} v${project.version}.</message>
 		                <noJekyll>true</noJekyll>
 		                <outputDirectory>${project.build.directory}/javadocs</outputDirectory>
 		                <branch>refs/heads/gh-pages</branch>
 		                <includes><include>**/*</include></includes>
-		                <repositoryName>API</repositoryName>
+		                <repositoryName>BattleNight-API</repositoryName>
 		                <repositoryOwner>BattleNight</repositoryOwner>
 		                <merge>false</merge>
 	            	</configuration>
