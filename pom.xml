@@ -78,7 +78,6 @@
 				<configuration>
 					<reportOutputDirectory>${project.build.directory}/javadocs</reportOutputDirectory>
 					<destDir>apidocs</destDir>
-					<stylesheetfile>${basedir}/src/site/assets/css/javadoc.css</stylesheetfile>
 					<show>public</show>
 				</configuration>
 				<executions>
