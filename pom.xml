@@ -106,7 +106,7 @@
 		                <includes><include>**/*</include></includes>
 		                <repositoryName>BattleNight-API</repositoryName>
 		                <repositoryOwner>BattleNight</repositoryOwner>
-		                <merge>false</merge>
+		                <merge>true</merge>
 	            	</configuration>
 	                <goals>
 	                  <goal>site</goal>
