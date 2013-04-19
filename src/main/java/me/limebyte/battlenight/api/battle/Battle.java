@@ -68,8 +68,10 @@ public interface Battle {
      */
     public boolean isInProgress();
 
+    @Deprecated
     public boolean onStart();
 
+    @Deprecated
     public boolean onStop();
 
     /**
