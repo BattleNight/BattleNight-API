@@ -6,35 +6,33 @@ import me.limebyte.battlenight.api.battle.Battle;
 
 public interface BattleManager {
 
-    /**
-     * DeRegisters a battle with the specified id from the manager effectively
-     * removing it.
-     * 
-     * @param id The id of the battle to remove
-     */
+    public Battle getBattle();
+    
+    public void setBattle(Battle battle) throws IllegalStateException;
+    
+    public Battle getNewBattle();
+    
+    public Battle getNewBattle(String id);
+    
+    @Deprecated
     public boolean deregister(String id) throws IllegalStateException;
-
+    
+    @Deprecated
     public Battle getActiveBattle();
 
+    @Deprecated
     public Battle getBattle(String id);
-
-    /**
-     * Gets the loaded battles.
-     * 
-     * @return loaded battles
-     */
+    
+    @Deprecated
     public List<Battle> getBattles();
-
-    /**
-     * Registers a new battle in the manager under the specified id.
-     * 
-     * @param battle The battle to register
-     * @param id The id to assign it
-     */
+    
+    @Deprecated
     public void register(Battle battle, String id) throws IllegalArgumentException;
-
+    
+    @Deprecated
     public void reloadBattles();
-
+    
+    @Deprecated
     public boolean setActiveBattle(String id) throws IllegalStateException;
-
+    
 }

@@ -1,0 +1,14 @@
+package me.limebyte.battlenight.api.battle;
+
+import org.bukkit.entity.Player;
+
+public interface Lobby {
+
+    public void addPlayer(Player player);
+    
+    public void removePlayer(Player player);
+    
+    public void startBattle();
+    
+    public ScorePane getScoreboard();
+}

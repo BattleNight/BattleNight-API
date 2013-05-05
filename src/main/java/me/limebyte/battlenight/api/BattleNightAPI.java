@@ -1,5 +1,6 @@
 package me.limebyte.battlenight.api;
 
+import me.limebyte.battlenight.api.battle.Lobby;
 import me.limebyte.battlenight.api.managers.ArenaManager;
 import me.limebyte.battlenight.api.managers.BattleManager;
 import me.limebyte.battlenight.api.managers.ClassManager;
@@ -18,6 +19,8 @@ public interface BattleNightAPI {
 
     public ClassManager getClassManager();
 
+    public Lobby getLobby();
+    
     public Messenger getMessenger();
 
     public MusicManager getMusicManager();
