@@ -93,7 +93,7 @@
 			<plugin>
 	            <groupId>com.github.github</groupId>
 	            <artifactId>site-maven-plugin</artifactId>
-	            <version>0.7</version>
+	            <version>0.8</version>
 	            <executions>
 	              <execution>
 	              	<id>repo</id>
@@ -137,7 +137,7 @@
 	<!-- Distribution -->
 	<distributionManagement>
 		<repository>
-	        <id>internal.repo</id>
+	        <id>github</id>
 	        <name>BattleNight API Repo</name>
 	        <url>file://${project.build.directory}/repo</url>
 	    </repository>
