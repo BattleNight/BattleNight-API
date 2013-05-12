@@ -32,6 +32,7 @@ public enum Message {
     PLAYER_JOINED_TEAM("$1" + ChatColor.GRAY + " has joined team $2" + ChatColor.GRAY + "."),
 
     // Lounge Messages
+    ALREADY_IN_LOBBY(ChatColor.RED + "You are already in the lobby!"),
     NO_PERMISSION_CLASS(ChatColor.RED + "You do not have permission to use this class."),
     NO_CLASS(ChatColor.RED + "You have not selected a class!"),
     PLAYER_IS_READY("$1" + ChatColor.GRAY + " is ready!"),
