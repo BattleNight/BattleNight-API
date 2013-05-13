@@ -10,6 +10,8 @@ public interface Lobby {
     
     public void removePlayer(Player player);
     
+    public boolean contains(Player player);
+    
     public Set<String> getPlayers();
     
     public void startBattle() throws IllegalStateException;
