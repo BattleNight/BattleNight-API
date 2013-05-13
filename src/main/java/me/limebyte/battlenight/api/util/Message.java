@@ -31,11 +31,12 @@ public enum Message {
     JOINED_TEAM("You are on team $1" + ChatColor.WHITE + "."),
     PLAYER_JOINED_TEAM("$1" + ChatColor.GRAY + " has joined team $2" + ChatColor.GRAY + "."),
 
-    // Lounge Messages
+    // Lobby Messages
     ALREADY_IN_LOBBY(ChatColor.RED + "You are already in the lobby!"),
     NO_PERMISSION_CLASS(ChatColor.RED + "You do not have permission to use this class."),
     NO_CLASS(ChatColor.RED + "You have not selected a class!"),
     PLAYER_IS_READY("$1" + ChatColor.GRAY + " is ready!"),
+    WAITING_FOR_PLAYERS("Waiting for $1."),
 
     // Kill Messages
     YOU_WERE_KILLED(ChatColor.GRAY + "You were killed by $1" + ChatColor.GRAY + "!"),

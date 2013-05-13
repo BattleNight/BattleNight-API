@@ -36,24 +36,34 @@ public interface Messenger {
 
     public void tell(CommandSender sender, String message, Object... args);
 
-    public void tellEveryone(Message message);
+    public void tellLobby(Message message);
 
-    public void tellEveryone(Message message, Object... args);
+    public void tellLobby(Message message, Object... args);
 
-    public void tellEveryone(Page page);
+    public void tellLobby(Page page);
 
-    public void tellEveryone(String message);
+    public void tellLobby(String message);
 
-    public void tellEveryone(String message, Object... args);
+    public void tellLobby(String message, Object... args);
+    
+    public void tellBattle(Message message);
 
-    public void tellEveryoneExcept(Player player, Message message);
+    public void tellBattle(Message message, Object... args);
 
-    public void tellEveryoneExcept(Player player, Message message, Object... args);
+    public void tellBattle(Page page);
 
-    public void tellEveryoneExcept(Player player, Page page);
+    public void tellBattle(String message);
 
-    public void tellEveryoneExcept(Player player, String message);
+    public void tellBattle(String message, Object... args);
 
-    public void tellEveryoneExcept(Player player, String message, Object... args);
+    public void tellBattleExcept(Player player, Message message);
+
+    public void tellBattleExcept(Player player, Message message, Object... args);
+
+    public void tellBattleExcept(Player player, Page page);
+
+    public void tellBattleExcept(Player player, String message);
+
+    public void tellBattleExcept(Player player, String message, Object... args);
 
 }

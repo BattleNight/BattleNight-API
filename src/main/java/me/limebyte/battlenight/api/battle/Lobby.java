@@ -12,7 +12,7 @@ public interface Lobby {
     
     public Set<String> getPlayers();
     
-    public void startBattle();
+    public void startBattle() throws IllegalStateException;
     
     public ScorePane getScoreboard();
 }
