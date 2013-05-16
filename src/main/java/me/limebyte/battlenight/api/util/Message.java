@@ -35,7 +35,7 @@ public enum Message {
     ALREADY_IN_LOBBY(ChatColor.RED + "You are already in the lobby!"),
     NO_PERMISSION_CLASS(ChatColor.RED + "You do not have permission to use this class."),
     NO_CLASS(ChatColor.RED + "You have not selected a class!"),
-    PLAYER_IS_READY("$1" + ChatColor.GRAY + " is ready!"),
+    PLAYER_IS_READY(ChatColor.GREEN + "$1" + " is ready!"),
     WAITING_FOR_PLAYERS("Waiting for $1."),
 
     // Kill Messages
