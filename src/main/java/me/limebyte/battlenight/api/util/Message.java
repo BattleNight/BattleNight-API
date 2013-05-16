@@ -90,7 +90,8 @@ public enum Message {
     RELOADING("Reloading BattleNight..."),
     RELOAD_SUCCESSFUL(ChatColor.GREEN + "Reloaded successfully."),
     RELOAD_FAILED(ChatColor.RED + "Reload failed.  See console for error log."),
-    PLAYER_NOT_IN_BATTLE(ChatColor.RED + "Player \"$1\" is not in the Battle.");
+    PLAYER_NOT_IN_BATTLE(ChatColor.RED + "Player \"$1\" is not in the Battle."),
+    LOBBY_COUNTDOWN(ChatColor.GOLD + "Battle starting in $1!");
 
     private String message;
 

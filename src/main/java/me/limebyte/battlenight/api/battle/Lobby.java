@@ -16,5 +16,7 @@ public interface Lobby {
     
     public void startBattle() throws IllegalStateException;
     
+    public boolean isStarting();
+    
     public ScorePane getScoreboard();
 }
