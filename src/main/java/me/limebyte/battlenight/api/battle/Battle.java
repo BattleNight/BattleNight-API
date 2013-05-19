@@ -4,7 +4,6 @@ import java.util.Set;
 
 import me.limebyte.battlenight.api.util.Timer;
 
-import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 public interface Battle {
@@ -83,7 +82,11 @@ public interface Battle {
      */
     public boolean removePlayer(Player player);
 
-    public Location respawn(Player player);
+    /**
+     * Respawns the specified {@link Player} at a random spawnpoint with a new set of their classes gear.
+     * @param player
+     */
+    public void respawn(Player player);
 
     /**
      * Sets the {@link Arena} that will be used for this battle. The arena will
