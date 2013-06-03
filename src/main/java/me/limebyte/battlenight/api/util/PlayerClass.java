@@ -6,6 +6,7 @@ import java.util.List;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.permissions.Permission;
+import org.bukkit.potion.PotionEffect;
 
 public interface PlayerClass {
 
@@ -14,6 +15,8 @@ public interface PlayerClass {
     public List<ItemStack> getArmour();
 
     public List<ItemStack> getItems();
+
+    public List<PotionEffect> getEffects();
 
     public String getName();
 
