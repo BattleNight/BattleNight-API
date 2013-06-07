@@ -43,8 +43,8 @@ public enum Message {
     PLAYER_WAS_KILLED("$1 " + ChatColor.GRAY + "was killed by" + ChatColor.WHITE + " $2" + ChatColor.GRAY + "."),
 
     // Win Messages
-    PLAYER_WON(ChatColor.GOLD + "$1 won the Battle!"),
-    TEAM_WON("$1 Team won the Battle $2 to $3!"),
+    PLAYER_WON(ChatColor.GOLD + "$1 won the Battle with a score of $2!"),
+    TEAM_WON("$1 Team won the Battle with a score of $2!"),
     DRAW(ChatColor.DARK_PURPLE + "Draw!"),
 
     // Class Sign Creation Messages
