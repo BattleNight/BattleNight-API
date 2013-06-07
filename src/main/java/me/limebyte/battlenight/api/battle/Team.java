@@ -1,36 +1,31 @@
 package me.limebyte.battlenight.api.battle;
 
+import java.util.Set;
+
 import org.bukkit.ChatColor;
+import org.bukkit.entity.Player;
 
 public interface Team {
 
-    public void addDeath();
-
-    public void addKill();
+    public String getName();
 
     public ChatColor getColour();
 
-    public int getDeaths();
-
     public String getDisplayName();
 
-    public double getKDR();
+    public int getScore();
 
-    public int getKills();
+    public Set<String> getPlayers();
 
-    public String getName();
+    public void addPlayer(Player player);
 
-    public int getSize();
+    public void removePlayer(Player player);
 
     public boolean isReady();
 
     public void setColour(ChatColor colour);
 
-    public void setDeaths(int deaths);
-
     public void setDisplayName(String displayName);
-
-    public void setKills(int kills);
 
     public void setReady(boolean ready);
 

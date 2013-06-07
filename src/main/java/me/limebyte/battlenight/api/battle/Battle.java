@@ -8,10 +8,6 @@ import org.bukkit.entity.Player;
 
 public interface Battle {
 
-    public void addDeath(Player player);
-
-    public void addKill(Player player);
-
     /**
      * Adds the specified {@link Player} to the battle. This will return false
      * if it is unsuccessful.
@@ -30,14 +26,6 @@ public interface Battle {
      * @see Arena
      */
     public Arena getArena();
-
-    public int getDeaths(Player player);
-
-    public double getKDR(Player player);
-
-    public int getKills(Player player);
-
-    public Set<String> getLeadingPlayers();
 
     /**
      * Returns the maximum amount of players the battle can have. By default
@@ -67,12 +55,6 @@ public interface Battle {
      */
     public boolean isInProgress();
 
-    @Deprecated
-    public boolean onStart();
-
-    @Deprecated
-    public boolean onStop();
-
     /**
      * Removes the specified {@link Player} to the battle. This will return
      * false if it is unsuccessful.
@@ -83,7 +65,9 @@ public interface Battle {
     public boolean removePlayer(Player player);
 
     /**
-     * Respawns the specified {@link Player} at a random spawnpoint with a new set of their classes gear.
+     * Respawns the specified {@link Player} at a random spawnpoint with a new
+     * set of their classes gear.
+     * 
      * @param player
      */
     public void respawn(Player player);

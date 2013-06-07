@@ -44,7 +44,7 @@ public enum Message {
 
     // Win Messages
     PLAYER_WON(ChatColor.GOLD + "$1 won the Battle!"),
-    TEAM_WON("$1 Team won the Battle!"),
+    TEAM_WON("$1 Team won the Battle $2 to $3!"),
     DRAW(ChatColor.DARK_PURPLE + "Draw!"),
 
     // Class Sign Creation Messages
