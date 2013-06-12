@@ -19,8 +19,6 @@ public enum Message {
     CANT_SPECTATE("You must leave the Battle before spectating."),
     WAYPOINTS_UNSET(ChatColor.RED + "All waypoints must be set up first."),
     NO_ARENAS(ChatColor.RED + "No setup or enabled Arenas!"),
-    JOINED_LOBBY("Welcome!  You are playing on $1."),
-    PLAYER_JOINED_LOBBY("$1" + ChatColor.GRAY + " has joined the Battle."),
     BATTLE_STARTED(ChatColor.GREEN + "Let the Battle begin!"),
     BATTLE_ENDED("The Battle has ended."),
     BATTLE_FULL(ChatColor.RED + "The battle is full!"),
@@ -37,6 +35,9 @@ public enum Message {
     NO_CLASS(ChatColor.RED + "You have not selected a class!"),
     PLAYER_IS_READY(ChatColor.GREEN + "$1" + " is ready!"),
     WAITING_FOR_PLAYERS("Waiting for $1."),
+    JOINED_LOBBY("Welcome to the BattleNight lobby!  To leave type /bn leave."),
+    PLAYER_JOINED_LOBBY("$1" + ChatColor.GRAY + " has joined the Battle."),
+    ARENA_CHOSEN("You are playing $1 on $2."),
 
     // Kill Messages
     YOU_WERE_KILLED(ChatColor.GRAY + "You were killed by $1" + ChatColor.GRAY + "!"),

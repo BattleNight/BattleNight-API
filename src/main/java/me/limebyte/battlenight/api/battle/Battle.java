@@ -50,6 +50,8 @@ public interface Battle {
 
     public Timer getTimer();
 
+    public String getType();
+
     /**
      * @return if in progress
      */
