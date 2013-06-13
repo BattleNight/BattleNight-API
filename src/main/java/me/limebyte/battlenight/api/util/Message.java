@@ -37,7 +37,7 @@ public enum Message {
     WAITING_FOR_PLAYERS("Waiting for $1."),
     JOINED_LOBBY("Welcome to the BattleNight Lobby!"),
     PLAYER_JOINED_LOBBY("$1" + ChatColor.GRAY + " has joined the Lobby."),
-    ARENA_CHOSEN("You are playing $1 on $2."),
+    ARENA_CHOSEN(ChatColor.AQUA + "You are playing $1 on $2."),
 
     // Kill Messages
     YOU_WERE_KILLED(ChatColor.GRAY + "You were killed by $1" + ChatColor.GRAY + "!"),
