@@ -30,13 +30,13 @@ public enum Message {
     PLAYER_JOINED_TEAM("$1" + ChatColor.GRAY + " has joined team $2" + ChatColor.GRAY + "."),
 
     // Lobby Messages
-    ALREADY_IN_LOBBY(ChatColor.RED + "You are already in the lobby!"),
+    ALREADY_IN_LOBBY(ChatColor.RED + "You are already in the Lobby!"),
     NO_PERMISSION_CLASS(ChatColor.RED + "You do not have permission to use this class."),
-    NO_CLASS(ChatColor.RED + "You have not selected a class!"),
+    NO_CLASS(ChatColor.RED + "You must first select a class!"),
     PLAYER_IS_READY(ChatColor.GREEN + "$1" + " is ready!"),
     WAITING_FOR_PLAYERS("Waiting for $1."),
-    JOINED_LOBBY("Welcome to the BattleNight lobby!  To leave type /bn leave."),
-    PLAYER_JOINED_LOBBY("$1" + ChatColor.GRAY + " has joined the Battle."),
+    JOINED_LOBBY("Welcome to the BattleNight Lobby!"),
+    PLAYER_JOINED_LOBBY("$1" + ChatColor.GRAY + " has joined the Lobby."),
     ARENA_CHOSEN("You are playing $1 on $2."),
 
     // Kill Messages
