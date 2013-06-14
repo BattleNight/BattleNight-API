@@ -4,9 +4,8 @@ import org.bukkit.ChatColor;
 
 public enum Message {
     // Battle Messages
-    BATTLE_IN_PROGRESS(ChatColor.RED + "A Battle is already in progress!"),
     BATTLE_NOT_IN_PROGRESS(ChatColor.RED + "A Battle is not in progress!"),
-    ALREADY_IN_BATTLE(ChatColor.RED + "You have already joined a Battle!"),
+    ALREADY_IN_BATTLE(ChatColor.RED + "You are already in a Battle!"),
     NOT_IN_BATTLE(ChatColor.RED + "You are not in a Battle!"),
     NOT_IN_LOBBY(ChatColor.RED + "You are not in the Lobby!"),
     NO_CHEATING(ChatColor.RED + "Not so fast!  No cheating."),
@@ -17,31 +16,27 @@ public enum Message {
     TARGET_CYCLED("You are now spectating $1."),
     GOODBYE_SPECTATOR("You have stopped spectating."),
     CANT_SPECTATE("You must leave the Battle before spectating."),
-    WAYPOINTS_UNSET(ChatColor.RED + "All waypoints must be set up first."),
+    WAYPOINTS_UNSET(ChatColor.RED + "All waypoints must be set up first!"),
     NO_ARENAS(ChatColor.RED + "No setup or enabled Arenas!"),
-    BATTLE_STARTED(ChatColor.GREEN + "Let the Battle begin!"),
     BATTLE_ENDED("The Battle has ended."),
     BATTLE_FULL(ChatColor.RED + "The battle is full!"),
     NOT_ENOUGH_PLAYERS(ChatColor.RED + "You need $1 more players to start the battle!"),
 
     // Teamed Battle Messages
-    TEAM_IS_READY("$1" + ChatColor.WHITE + " Team is ready!"),
     JOINED_TEAM("You are on team $1" + ChatColor.WHITE + "."),
-    PLAYER_JOINED_TEAM("$1" + ChatColor.GRAY + " has joined team $2" + ChatColor.GRAY + "."),
+    PLAYER_JOINED_TEAM("$1" + ChatColor.GRAY + " is on team $2" + ChatColor.GRAY + "."),
 
     // Lobby Messages
     ALREADY_IN_LOBBY(ChatColor.RED + "You are already in the Lobby!"),
     NO_PERMISSION_CLASS(ChatColor.RED + "You do not have permission to use this class."),
     NO_CLASS(ChatColor.RED + "You must first select a class!"),
     PLAYER_IS_READY(ChatColor.GREEN + "$1" + " is ready!"),
-    WAITING_FOR_PLAYERS("Waiting for $1."),
-    JOINED_LOBBY("Welcome to the BattleNight Lobby!"),
+    WAITING_FOR_PLAYERS(ChatColor.GRAY + "Waiting for $1."),
+    JOINED_LOBBY(ChatColor.GOLD + "Welcome to the BattleNight Lobby!"),
     PLAYER_JOINED_LOBBY("$1" + ChatColor.GRAY + " has joined the Lobby."),
-    ARENA_CHOSEN(ChatColor.AQUA + "You are playing $1 on $2."),
-
-    // Kill Messages
-    YOU_WERE_KILLED(ChatColor.GRAY + "You were killed by $1" + ChatColor.GRAY + "!"),
-    PLAYER_WAS_KILLED("$1 " + ChatColor.GRAY + "was killed by" + ChatColor.WHITE + " $2" + ChatColor.GRAY + "."),
+    ARENA_CHOSEN(ChatColor.DARK_AQUA + "Playing $1 on $2."),
+    LOBBY_COUNTDOWN(ChatColor.GOLD + "Battle starting in $1!"),
+    BATTLE_STARTED(ChatColor.GREEN + "Let the Battle begin!"),
 
     // Win Messages
     PLAYER_WON(ChatColor.GOLD + "$1 won the Battle with a score of $2!"),
@@ -91,8 +86,7 @@ public enum Message {
     RELOADING("Reloading BattleNight..."),
     RELOAD_SUCCESSFUL(ChatColor.GREEN + "Reloaded successfully."),
     RELOAD_FAILED(ChatColor.RED + "Reload failed.  See console for error log."),
-    PLAYER_NOT_IN_BATTLE(ChatColor.RED + "Player \"$1\" is not in the Battle."),
-    LOBBY_COUNTDOWN(ChatColor.GOLD + "Battle starting in $1!");
+    PLAYER_NOT_IN_BATTLE(ChatColor.RED + "Player \"$1\" is not in the Battle.");
 
     private String message;
 
