@@ -18,6 +18,4 @@ public interface Lobby {
 
     public boolean isStarting();
 
-    public ScorePane getScorePane();
-
 }
