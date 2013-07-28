@@ -2,6 +2,7 @@ package me.limebyte.battlenight.api.managers;
 
 import java.util.List;
 
+import me.limebyte.battlenight.api.battle.Arena;
 import me.limebyte.battlenight.api.battle.Team;
 
 import org.bukkit.ChatColor;
@@ -22,6 +23,8 @@ public interface ScoreManager {
 
     public List<String> getPlayers();
 
+    public List<Arena> getVotableArenas();
+
     public void setState(ScoreboardState state);
 
     public void setScoreboard(Scoreboard scoreboard);
@@ -29,6 +32,8 @@ public interface ScoreManager {
     public void updateScore(Player player, int score);
 
     public void updateTime(long time);
+
+    public void updateVotes();
 
     public enum ScoreboardState {
         VOTING(ChatColor.GRAY + "Arena Voting"),

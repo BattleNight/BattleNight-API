@@ -22,6 +22,8 @@ public interface Arena extends ConfigurationSerializable {
 
     public String getTexturePack();
 
+    public int getVotes();
+
     public boolean isEnabled();
 
     public boolean isSetup(int minSpawnPoints);
@@ -33,5 +35,11 @@ public interface Arena extends ConfigurationSerializable {
     public void setEnabled(boolean enabled);
 
     public void setTexturePack(String texturePack);
+
+    public void setVotes(int votes);
+
+    public void addVote();
+
+    public void removeVote();
 
 }
