@@ -5,7 +5,6 @@ import java.util.List;
 import me.limebyte.battlenight.api.battle.Arena;
 import me.limebyte.battlenight.api.battle.Team;
 
-import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Scoreboard;
 
@@ -36,17 +35,23 @@ public interface ScoreManager {
     public void updateVotes();
 
     public enum ScoreboardState {
-        VOTING(ChatColor.GRAY + "Arena Voting"),
-        BATTLE(ChatColor.GRAY + "Battle (%1$TM:%1$TS)");
+        VOTING("Arena Voting", "Voting (%1$TM:%1$TS)"),
+        BATTLE("Battle Starting", "Battle (%1$TM:%1$TS)");
 
         private String title;
+        private String countdown;
 
-        private ScoreboardState(String title) {
+        private ScoreboardState(String title, String countdown) {
             this.title = title;
+            this.countdown = countdown;
         }
 
         public String getTitle() {
-            return ChatColor.BOLD + title;
+            return title;
+        }
+        
+        public String getCountdown() {
+            return countdown;
         }
     }
 
