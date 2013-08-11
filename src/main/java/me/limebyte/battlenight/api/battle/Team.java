@@ -7,21 +7,21 @@ import org.bukkit.entity.Player;
 
 public interface Team {
 
-    public String getName();
+    public void addPlayer(Player player);
 
     public ChatColor getColour();
 
     public String getDisplayName();
 
-    public int getScore();
+    public String getName();
 
     public Set<String> getPlayers();
 
-    public void addPlayer(Player player);
-
-    public void removePlayer(Player player);
+    public int getScore();
 
     public boolean isReady();
+
+    public void removePlayer(Player player);
 
     public void setColour(ChatColor colour);
 

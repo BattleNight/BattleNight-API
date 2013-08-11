@@ -8,6 +8,8 @@ public interface Arena extends ConfigurationSerializable {
 
     public int addSpawnPoint(Waypoint waypoint);
 
+    public void addVote();
+
     public void disable();
 
     public void enable();
@@ -30,6 +32,8 @@ public interface Arena extends ConfigurationSerializable {
 
     public void removeSpawnPoint(Waypoint waypoint);
 
+    public void removeVote();
+
     public void setDisplayName(String displayName);
 
     public void setEnabled(boolean enabled);
@@ -37,9 +41,5 @@ public interface Arena extends ConfigurationSerializable {
     public void setTexturePack(String texturePack);
 
     public void setVotes(int votes);
-
-    public void addVote();
-
-    public void removeVote();
 
 }

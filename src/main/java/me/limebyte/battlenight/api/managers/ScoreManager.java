@@ -12,21 +12,21 @@ public interface ScoreManager {
 
     public void addPlayer(Player player);
 
-    public void removePlayer(Player player);
-
     public void addTeam(Team team);
+
+    public List<String> getPlayers();
 
     public Scoreboard getScoreboard();
 
     public ScoreboardState getState();
 
-    public List<String> getPlayers();
-
     public List<Arena> getVotableArenas();
 
-    public void setState(ScoreboardState state);
+    public void removePlayer(Player player);
 
     public void setScoreboard(Scoreboard scoreboard);
+
+    public void setState(ScoreboardState state);
 
     public void updateScore(Player player, int score);
 
@@ -46,12 +46,12 @@ public interface ScoreManager {
             this.countdown = countdown;
         }
 
-        public String getTitle() {
-            return title;
-        }
-        
         public String getCountdown() {
             return countdown;
+        }
+
+        public String getTitle() {
+            return title;
         }
     }
 

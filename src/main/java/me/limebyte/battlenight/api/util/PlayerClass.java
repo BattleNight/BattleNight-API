@@ -14,9 +14,9 @@ public interface PlayerClass {
 
     public List<ItemStack> getArmour();
 
-    public List<ItemStack> getItems();
-
     public List<PotionEffect> getEffects();
+
+    public List<ItemStack> getItems();
 
     public String getName();
 

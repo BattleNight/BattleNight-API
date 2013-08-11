@@ -8,14 +8,14 @@ public interface Lobby {
 
     public void addPlayer(Player player);
 
-    public void removePlayer(Player player);
-
     public boolean contains(Player player);
 
     public Set<String> getPlayers();
 
-    public void startBattle() throws IllegalStateException;
-
     public boolean isStarting();
+
+    public void removePlayer(Player player);
+
+    public void startBattle() throws IllegalStateException;
 
 }

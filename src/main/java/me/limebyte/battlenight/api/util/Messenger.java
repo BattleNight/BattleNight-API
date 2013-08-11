@@ -36,16 +36,6 @@ public interface Messenger {
 
     public void tell(CommandSender sender, String message, Object... args);
 
-    public void tellLobby(Message message);
-
-    public void tellLobby(Message message, Object... args);
-
-    public void tellLobby(Page page);
-
-    public void tellLobby(String message);
-
-    public void tellLobby(String message, Object... args);
-    
     public void tellBattle(Message message);
 
     public void tellBattle(Message message, Object... args);
@@ -65,5 +55,15 @@ public interface Messenger {
     public void tellBattleExcept(Player player, String message);
 
     public void tellBattleExcept(Player player, String message, Object... args);
+
+    public void tellLobby(Message message);
+
+    public void tellLobby(Message message, Object... args);
+
+    public void tellLobby(Page page);
+
+    public void tellLobby(String message);
+
+    public void tellLobby(String message, Object... args);
 
 }

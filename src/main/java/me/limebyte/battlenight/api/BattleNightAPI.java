@@ -15,19 +15,19 @@ public interface BattleNightAPI {
 
     public ArenaManager getArenaManager();
 
+    public Battle getBattle();
+
     public ClassManager getClassManager();
 
     public Lobby getLobby();
-
-    public Battle getBattle();
 
     public Messenger getMessenger();
 
     public MusicManager getMusicManager();
 
-    public ScoreManager getScoreManager();
-
     public PlayerClass getPlayerClass(Player player);
+
+    public ScoreManager getScoreManager();
 
     public void setBattle(Battle battle);
 
