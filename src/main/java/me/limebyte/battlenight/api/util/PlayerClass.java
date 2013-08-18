@@ -18,6 +18,8 @@ public interface PlayerClass {
 
     public List<ItemStack> getItems();
 
+    public double getMaxHealth();
+
     public String getName();
 
     public Permission getPermission();
