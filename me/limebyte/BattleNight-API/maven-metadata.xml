@@ -3,10 +3,9 @@
   <groupId>me.limebyte</groupId>
   <artifactId>BattleNight-API</artifactId>
   <versioning>
-    <release>1.9.1</release>
     <versions>
-      <version>1.9.1</version>
+      <version>1.10-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20130814112439</lastUpdated>
+    <lastUpdated>20130818045557</lastUpdated>
   </versioning>
 </metadata>
