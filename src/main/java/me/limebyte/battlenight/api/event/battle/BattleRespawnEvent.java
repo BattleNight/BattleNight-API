@@ -29,4 +29,8 @@ public class BattleRespawnEvent extends BattlePlayerEvent {
         return waypoint;
     }
 
+    public void setWaypoint(Waypoint waypoint) {
+        this.waypoint = waypoint;
+    }
+
 }
