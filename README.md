@@ -3,7 +3,6 @@ BattleNight-API
 
 API for the BattleNight plugin.
 
-Example Usage
-===============
+## Example Usage
 
 * [DeathStrike](https://github.com/BattleNight/DeathStrike)
