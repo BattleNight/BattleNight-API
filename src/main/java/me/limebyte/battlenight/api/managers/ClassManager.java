@@ -14,6 +14,13 @@ public interface ClassManager {
     public List<PlayerClass> getClasses();
 
     /**
+     * Gets the specified class.
+     * 
+     * @return null if not found.
+     */
+    public PlayerClass getPlayerClass(String className);
+
+    /**
      * Gets a random loaded class.
      * 
      * @return a random class.
