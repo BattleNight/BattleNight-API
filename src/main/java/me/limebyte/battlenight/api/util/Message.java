@@ -49,7 +49,7 @@ public enum Message {
 
     // Command Messages
     USAGE("Usage: $1"),
-    NO_PERMISSION_COMMAND(ChatColor.RED + "You do not have permission to use this $1."),
+    NO_PERMISSION_COMMAND(ChatColor.RED + "You do not have permission to use this command."),
     PLAYER_ONLY(ChatColor.RED + "This command can only be performed by a player!"),
     SPECIFY_MESSAGE(ChatColor.RED + "Please specify a message."),
     SPECIFY_PLAYER(ChatColor.RED + "Please specify a player."),
