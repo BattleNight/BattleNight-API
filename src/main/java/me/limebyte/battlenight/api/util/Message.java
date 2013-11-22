@@ -4,13 +4,6 @@ import org.bukkit.ChatColor;
 
 public enum Message {
     // Battle Messages
-    BATTLE_NOT_IN_PROGRESS(ChatColor.RED + "A Battle is not in progress!"),
-    ALREADY_IN_BATTLE(ChatColor.RED + "You are already in a Battle!"),
-    NOT_IN_BATTLE(ChatColor.RED + "You are not in a Battle!"),
-    NOT_IN_LOBBY(ChatColor.RED + "You are not in the Lobby!"),
-    NO_CHEATING(ChatColor.RED + "Not so fast!  No cheating."),
-    NO_TELEPORTING(ChatColor.RED + "You are not permitted to teleport while in a Battle."),
-    NO_COMMAND(ChatColor.RED + "You are not permitted to perform this command while in a Battle."),
     ALREADY_SPECTATING(ChatColor.RED + "You are already watching a Battle!"),
     WELCOME_SPECTATOR("Welcome!  You are spectating $1."),
     TARGET_CYCLED("You are now spectating $1."),
@@ -26,41 +19,20 @@ public enum Message {
     JOINED_TEAM("You are on team $1" + ChatColor.WHITE + "."),
     PLAYER_JOINED_TEAM("$1" + ChatColor.GRAY + " is on team $2" + ChatColor.GRAY + "."),
 
-    // Lobby Messages
-    ALREADY_IN_LOBBY(ChatColor.RED + "You are already in the Lobby!"),
-    NO_PERMISSION_CLASS(ChatColor.RED + "You do not have permission to use this class."),
-    NO_CLASS(ChatColor.RED + "You must first select a class!"),
-    PLAYER_IS_READY(ChatColor.GREEN + "$1" + " is ready!"),
-    WAITING_FOR_PLAYERS(ChatColor.GRAY + "Waiting for $1."),
-    JOINED_LOBBY(ChatColor.GOLD + "Welcome to the BattleNight Lobby!"),
-    PLAYER_JOINED_LOBBY("$1" + ChatColor.GRAY + " has joined the Lobby."),
-    ARENA_CHOSEN(ChatColor.DARK_AQUA + "Playing $1 on $2."),
-    LOBBY_COUNTDOWN(ChatColor.GOLD + "Battle starting in $1!"),
-    BATTLE_STARTED(ChatColor.GREEN + "Let the Battle begin!"),
-
     // Win Messages
     PLAYER_WON(ChatColor.GOLD + "$1 won the Battle with a score of $2!"),
     TEAM_WON("$1 Team won the Battle with a score of $2!"),
     DRAW(ChatColor.DARK_PURPLE + "Draw!"),
 
-    // Class Sign Creation Messages
-    SUCCESSFUL_SIGN(ChatColor.GREEN + "Successfully created sign for $1!"),
-    UNSUCCESSFUL_SIGN(ChatColor.RED + "Error creating sign for $1!  Leave last 3 lines blank."),
-
     // Command Messages
-    USAGE("Usage: $1"),
-    NO_PERMISSION_COMMAND(ChatColor.RED + "You do not have permission to use this command."),
-    PLAYER_ONLY(ChatColor.RED + "This command can only be performed by a player!"),
     SPECIFY_MESSAGE(ChatColor.RED + "Please specify a message."),
     SPECIFY_PLAYER(ChatColor.RED + "Please specify a player."),
     SPECIFY_WAYPOINT(ChatColor.RED + "Please specify a waypoint."),
     SPECIFY_COORDINATE(ChatColor.RED + "Please specify a coordinate."),
     SPECIFY_ARENA(ChatColor.RED + "Please specify an arena name."),
     SPECIFY_TEST(ChatColor.RED + "Please specify a test."),
-    SPECIFY_CLASS(ChatColor.RED + "Please specify a class."),
     INVALID_COMMAND(ChatColor.RED + "Invalid Command.  Type '/bn help' for help."),
     INVALID_WAYPOINT(ChatColor.RED + "Invalid Waypoint.  Type \"/bn waypoints\" for a list."),
-    INVALID_CLASS(ChatColor.RED + "Invalid Class."),
     WAYPOINT_SET(ChatColor.GREEN + "$1 Waypoint set to $2 in world $3."),
     WAYPOINT_SET_CURRENT_LOC(ChatColor.GREEN + "$1 Waypoint set to your current location."),
     WAYPOINT_SET_THIS_WORLD(ChatColor.GREEN + "$1 Waypoint set to $2 in this world."),

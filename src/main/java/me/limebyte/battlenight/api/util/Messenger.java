@@ -8,6 +8,8 @@ import org.bukkit.entity.Player;
 
 public interface Messenger {
 
+    public String get(String name);
+
     public void debug(Level level, String message);
 
     public void debug(Level level, String message, Object... args);
