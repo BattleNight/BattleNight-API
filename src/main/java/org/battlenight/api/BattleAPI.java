@@ -11,9 +11,9 @@ public interface BattleAPI {
     /**
      * Gets the current {@link Configuration} singleton.
      * 
-     * @return ConfigManager instance being used
+     * @return Configuration instance being used
      */
-    public Configuration getConfigManager();
+    public Configuration getConfiguration();
 
     /**
      * Gets the current {@link Messenger} singleton.
