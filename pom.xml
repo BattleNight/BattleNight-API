@@ -124,7 +124,7 @@
                       <configuration>
                         <message>Documentation for ${project.name} v${project.version}.</message>
                         <noJekyll>true</noJekyll>
-                        <outputDirectory>${project.build.directory}/javadocs</outputDirectory>
+                        <outputDirectory>${project.build.directory}/javadocs/apidocs</outputDirectory>
                         <branch>refs/heads/gh-pages</branch>
                         <includes><include>**/*</include></includes>
                         <repositoryName>BattleNight-API</repositoryName>
