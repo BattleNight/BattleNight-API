@@ -9,7 +9,7 @@ html { background-color: #f5f6f7; }
 body { background-color: transparent; color: #656565; font-size: 13px; line-height: 1.428571429; }
 body, h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 b { font-weight: 300; }
-pre b { font-weight: 300; }
+pre b, dl b { font-weight: 700; }
 
 a, a:visited { color: #3a5a7a; text-decoration: none; }
 
