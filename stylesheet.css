@@ -1,29 +1,41 @@
+/***********************/
 /* Javadoc style sheet */
+/***********************/
 
-/* Define colors, fonts and other style attributes here to override the defaults */
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300,700");
 
 /* Page background color */
-body { background-color: #FFFFFF; color:#000000 }
+html { background-color: #f5f6f7; }
+body { background-color: transparent; color: #656565; font-size: 13px; line-height: 1.428571429; }
+body, h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+b { font-weight: 300; }
+pre b { font-weight: 300; }
+
+a, a:visited { color: #3a5a7a; text-decoration: none; }
 
 /* Headings */
-h1 { font-size: 145% }
+h1 { font-size: 30px; font-weight: 300; margin-top: 20px; margin-bottom: 10px; line-height: 1.1; }
 
 /* Table colors */
-.TableHeadingColor     { background: #CCCCFF; color:#000000 } /* Dark mauve */
-.TableSubHeadingColor  { background: #EEEEFF; color:#000000 } /* Light mauve */
-.TableRowColor         { background: #FFFFFF; color:#000000 } /* White */
+.TableHeadingColor     { background: #233445; color: #fff }
+.TableSubHeadingColor  { background: #EEEEFF; }
+.TableRowColor         { background: #fff; }
+table { border-collapse: collapse; border: 1px solid #e3e8ed; border-radius: 4px; }
+table .NavBarCell1, .NavBarCell1 table { border: 0; }
 
 /* Font used in left-hand frame lists */
-.FrameTitleFont   { font-size: 100%; font-family: Helvetica, Arial, sans-serif; color:#000000 }
-.FrameHeadingFont { font-size:  90%; font-family: Helvetica, Arial, sans-serif; color:#000000 }
-.FrameItemFont    { font-size:  90%; font-family: Helvetica, Arial, sans-serif; color:#000000 }
+.FrameTitleFont   { font-size: 100%; font-family: Helvetica, Arial, sans-serif; }
+.FrameHeadingFont { font-size:  90%; font-family: Helvetica, Arial, sans-serif; }
+.FrameItemFont    { font-size:  90%; font-family: Helvetica, Arial, sans-serif; }
 
 /* Navigation bar fonts and colors */
-.NavBarCell1    { background-color:#EEEEFF; color:#000000} /* Light mauve */
-.NavBarCell1Rev { background-color:#00008B; color:#FFFFFF} /* Dark Blue */
-.NavBarFont1    { font-family: Arial, Helvetica, sans-serif; color:#000000;color:#000000;}
-.NavBarFont1Rev { font-family: Arial, Helvetica, sans-serif; color:#FFFFFF;color:#FFFFFF;}
+.NavBarCell1    { background-color: #fff; }
+.NavBarCell1Rev { background-color: #fff; }
+.NavBarCell1 .NavBarCell1 { padding: 12px; }
+.NavBarCell1 .NavBarCell1:hover { padding: 12px; background-color: #eeeeee; }
+.NavBarCell1 .NavBarCell1Rev { padding: 12px; }
+.NavBarFont1    { }
+.NavBarFont1Rev { color: #22baa0;}
 
-.NavBarCell2    { font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF; color:#000000}
-.NavBarCell3    { font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF; color:#000000}
-
+.NavBarCell2    { background-color: #f5f6f7; }
+.NavBarCell3    { background-color: #f5f6f7; }
