@@ -112,7 +112,7 @@
                         <includes><include>**/*</include></includes>
                         <repositoryName>BattleNight-API</repositoryName>
                         <repositoryOwner>BattleNight</repositoryOwner>
-                        <merge>false</merge>
+                        <merge>true</merge>
                     </configuration>
                     <goals>
                       <goal>site</goal>
@@ -130,6 +130,23 @@
                         <repositoryName>BattleNight-API</repositoryName>
                         <repositoryOwner>BattleNight</repositoryOwner>
                         <merge>false</merge>
+                    </configuration>
+                    <goals>
+                      <goal>site</goal>
+                    </goals>
+                  </execution>
+                  <execution>
+                      <id>cname</id>
+                      <phase>deploy</phase>
+                      <configuration>
+                        <message>Extra files for documentation.</message>
+                        <noJekyll>true</noJekyll>
+                        <outputDirectory>${basedir}/extradocs</outputDirectory>
+                        <branch>refs/heads/gh-pages</branch>
+                        <includes><include>**/*</include></includes>
+                        <repositoryName>BattleNight-API</repositoryName>
+                        <repositoryOwner>BattleNight</repositoryOwner>
+                        <merge>true</merge>
                     </configuration>
                     <goals>
                       <goal>site</goal>
