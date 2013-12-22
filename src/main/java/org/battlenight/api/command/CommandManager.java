@@ -9,9 +9,9 @@ import org.bukkit.command.TabCompleter;
 public interface CommandManager extends CommandExecutor, TabCompleter {
 
     /**
-     * Gets the {@link BattleNightCommand} associated with the specified label
-     * or alias. If there is no command matching registered with this manager,
-     * it will return null.
+     * Returns the {@link BattleNightCommand} associated with the specified
+     * label or alias. If there is no command matching registered with this
+     * manager, it will return null.
      * 
      * @param label
      *            the command label or alias

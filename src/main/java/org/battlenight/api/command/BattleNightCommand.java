@@ -20,6 +20,7 @@ public abstract class BattleNightCommand {
     private String usage;
     private List<String> aliases;
     private String permission;
+    private boolean playerOnly;
 
     public BattleNightCommand(String name) {
         this(name, "", "", new ArrayList<String>());
@@ -32,11 +33,12 @@ public abstract class BattleNightCommand {
         this.usage = usageMessage;
         this.aliases = aliases;
         this.permission = "battlenight.command." + label;
+        this.playerOnly = false;
     }
 
     /**
-     * Gets the API instance this command is associated with. This will be null
-     * if not registered.
+     * Returns the API instance this command is associated with. This will be
+     * null if not registered.
      * 
      * @return the api instance
      */
@@ -57,7 +59,7 @@ public abstract class BattleNightCommand {
     }
 
     /**
-     * Gets the name for this command.
+     * Returns the name for this command.
      * 
      * @return command name
      */
@@ -75,7 +77,7 @@ public abstract class BattleNightCommand {
     }
 
     /**
-     * Gets the label for this command.
+     * Returns the label for this command.
      * 
      * @return command label
      */
@@ -96,7 +98,7 @@ public abstract class BattleNightCommand {
     }
 
     /**
-     * Gets a brief description of this command.
+     * Returns a brief description of this command.
      * 
      * @return description
      */
@@ -115,7 +117,7 @@ public abstract class BattleNightCommand {
     }
 
     /**
-     * Gets the usage message of this command
+     * Returns the usage message of this command
      * 
      * @return usage message
      */
@@ -134,7 +136,7 @@ public abstract class BattleNightCommand {
     }
 
     /**
-     * Gets a list of aliases for this command.
+     * Returns a list of aliases for this command.
      * 
      * @return list of aliases
      */
@@ -167,7 +169,8 @@ public abstract class BattleNightCommand {
     }
 
     /**
-     * Gets the permission required by users to be able to perform this command.
+     * Returns the permission required by users to be able to perform this
+     * command.
      * 
      * @return permission name
      */
@@ -183,6 +186,24 @@ public abstract class BattleNightCommand {
      */
     public void setPermission(String permission) {
         this.permission = permission;
+    }
+
+    /**
+     * Returns true if this command is player only.
+     * 
+     * @return true if player only
+     */
+    public boolean isPlayerOnly() {
+        return playerOnly;
+    }
+
+    /**
+     * Sets the command as a command that can only be executed by a player.
+     * 
+     * @param playerOnly
+     */
+    public void setPlayerOnly(boolean playerOnly) {
+        this.playerOnly = playerOnly;
     }
 
     /**
