@@ -1,3 +1,4 @@
 org.battlenight.api
+org.battlenight.api.command
 org.battlenight.api.configuration
 org.battlenight.api.message
