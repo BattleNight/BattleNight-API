@@ -1,5 +1,6 @@
 package org.battlenight.api;
 
+import org.battlenight.api.command.CommandManager;
 import org.battlenight.api.configuration.Configuration;
 import org.battlenight.api.message.Messenger;
 
@@ -7,6 +8,13 @@ import org.battlenight.api.message.Messenger;
  * Represents the API for accessing BattleNight singletons.
  */
 public interface BattleAPI {
+
+    /**
+     * Gets the current {@link CommandManager} singleton.
+     * 
+     * @return CommandManager instance being used
+     */
+    public CommandManager getCommandManager();
 
     /**
      * Gets the current {@link Configuration} singleton.
