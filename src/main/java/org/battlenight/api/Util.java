@@ -1,8 +1,11 @@
 package org.battlenight.api;
 
 import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.World;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 
 public class Util {
 
@@ -31,5 +34,17 @@ public class Util {
         float pitch = Float.parseFloat(secondParts[4]);
 
         return new Location(world, x, y, z, yaw, pitch);
+    }
+
+    public static void reset(Player player) {
+        player.getInventory().clear();
+        player.getInventory().setArmorContents(new ItemStack[4]);
+        player.setAllowFlight(false);
+        player.setExp(0f);
+        player.setFoodLevel(20);
+        player.setGameMode(GameMode.SURVIVAL);
+        player.setMaxHealth(20.0);
+        player.setHealth(player.getMaxHealth());
+        player.setLevel(0);
     }
 }
