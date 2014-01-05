@@ -2,6 +2,7 @@ package org.battlenight.api;
 
 import org.battlenight.api.command.CommandManager;
 import org.battlenight.api.configuration.Configuration;
+import org.battlenight.api.game.Lobby;
 import org.battlenight.api.message.Messenger;
 
 /**
@@ -29,6 +30,13 @@ public interface BattleAPI {
      * @return Messenger instance being used
      */
     public Messenger getMessenger();
+
+    /**
+     * Gets the current {@link Lobby} singleton.
+     * 
+     * @return Lobby instance being used
+     */
+    public Lobby getLobby();
 
     /**
      * Soft reloads the BattleNight singletons.

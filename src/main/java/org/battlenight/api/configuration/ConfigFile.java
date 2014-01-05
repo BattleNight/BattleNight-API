@@ -19,6 +19,10 @@ public enum ConfigFile {
      */
     LOADOUTS("loadouts"),
     /**
+     * Location storage file
+     */
+    LOCATIONS("locations"),
+    /**
      * Arena storage file
      */
     ARENAS("arenas"),
