@@ -20,7 +20,7 @@ public class Util {
     }
 
     public static Location locationFromString(String location) {
-        String[] firstParts = location.substring(0, location.length() - 1).split("(");
+        String[] firstParts = location.substring(0, location.length() - 1).split("\\(");
         String[] secondParts = firstParts[1].split(", ");
 
         World world = Bukkit.getWorld(firstParts[0]);
