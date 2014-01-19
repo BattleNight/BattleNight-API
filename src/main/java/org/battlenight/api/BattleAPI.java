@@ -2,6 +2,7 @@ package org.battlenight.api;
 
 import org.battlenight.api.command.CommandManager;
 import org.battlenight.api.configuration.Configuration;
+import org.battlenight.api.game.GameTypeManager;
 import org.battlenight.api.game.Lobby;
 import org.battlenight.api.message.Messenger;
 
@@ -24,6 +25,13 @@ public interface BattleAPI {
      */
     public Configuration getConfiguration();
 
+    /**
+     * Gets the current {@link GameTypeManager} singleton.
+     * 
+     * @return GameTypeManager instance being used
+     */
+    public GameTypeManager getGameTypeManager();
+    
     /**
      * Gets the current {@link Messenger} singleton.
      * 
