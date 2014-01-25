@@ -70,7 +70,8 @@ public abstract class BattleNightCommand {
     /**
      * Sets the name for this command.
      * 
-     * @param new name
+     * @param name
+     *            the new name
      */
     public String setName(String name) {
         return name;
@@ -220,8 +221,6 @@ public abstract class BattleNightCommand {
      * 
      * @param sender
      *            Source object which is executing this command
-     * @param commandLabel
-     *            The alias of the command used
      * @param args
      *            All arguments passed to the command, split via ' '
      * @return true if the command was successful, otherwise false
