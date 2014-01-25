@@ -20,7 +20,6 @@
 /bin
 /dist
 /manifest.mf
-/extradocs
 
 # Mac filesystem dust
 /.DS_Store
