@@ -1,5 +1,6 @@
 package org.battlenight.api.game;
 
+import java.util.List;
 import java.util.Queue;
 
 import org.bukkit.entity.Player;
@@ -12,4 +13,6 @@ public interface Lobby {
 
     public Queue<String> getPlayers();
 
+    public List<Battle> getBattles();
+    
 }

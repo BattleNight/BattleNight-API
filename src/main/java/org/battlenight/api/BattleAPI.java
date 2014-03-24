@@ -2,8 +2,8 @@ package org.battlenight.api;
 
 import org.battlenight.api.command.CommandManager;
 import org.battlenight.api.configuration.Configuration;
-import org.battlenight.api.game.GameTypeManager;
 import org.battlenight.api.game.Lobby;
+import org.battlenight.api.game.type.GameTypeManager;
 import org.battlenight.api.message.Messenger;
 
 /**

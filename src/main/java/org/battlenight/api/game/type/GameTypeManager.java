@@ -1,4 +1,5 @@
-package org.battlenight.api.game;
+package org.battlenight.api.game.type;
+
 
 /**
  * Represents the manager for Battle game types.
@@ -6,9 +7,9 @@ package org.battlenight.api.game;
 public interface GameTypeManager {
 
     /**
-     * Returns the {@link GameType} associated with the specified name. If there
-     * is no game type matching registered with this manager, it will return
-     * null.
+     * Returns a new instance of the {@link GameType} associated with the
+     * specified name. If there is no game type matching registered with this
+     * manager, it will return null.
      * 
      * @param name
      *            the game type name

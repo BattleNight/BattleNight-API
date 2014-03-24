@@ -23,9 +23,9 @@ public enum ConfigFile {
      */
     LOCATIONS("locations"),
     /**
-     * Arena storage file
+     * Map storage file
      */
-    ARENAS("arenas"),
+    MAPS("maps"),
     /**
      * English message file
      */
