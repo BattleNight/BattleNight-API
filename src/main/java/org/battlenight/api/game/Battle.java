@@ -3,6 +3,7 @@ package org.battlenight.api.game;
 import java.util.List;
 
 import org.battlenight.api.game.type.GameType;
+import org.battlenight.api.map.GameMap;
 import org.bukkit.entity.Player;
 
 public interface Battle {
@@ -14,5 +15,7 @@ public interface Battle {
     public List<String> getPlayers();
 
     public GameType getGameType();
+
+    public GameMap getGameMap();
 
 }

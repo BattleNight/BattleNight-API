@@ -1,5 +1,6 @@
 package org.battlenight.api.message;
 
+import org.battlenight.api.game.Lobby;
 import org.bukkit.command.CommandSender;
 
 /**
@@ -74,5 +75,15 @@ public interface Messenger {
      *            arguments for the message
      */
     public void send(CommandSender sender, String message, Object... args);
+
+    /**
+     * Sends a message with arguments to the players in the {@link Lobby}.
+     * 
+     * @param message
+     *            the path to the message
+     * @param args
+     *            arguments for the message
+     */
+    public void sendLobby(String message, Object... args);
 
 }

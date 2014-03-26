@@ -14,5 +14,7 @@ public interface Lobby {
     public Queue<String> getPlayers();
 
     public List<Battle> getBattles();
-    
+
+    public void startBattle();
+
 }
