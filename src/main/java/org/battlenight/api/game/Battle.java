@@ -18,4 +18,6 @@ public interface Battle {
 
     public GameMap getGameMap();
 
+    public boolean isInProgress();
+
 }
