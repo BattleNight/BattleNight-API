@@ -1,6 +1,7 @@
 package org.battlenight.api.game;
 
 import java.util.List;
+import java.util.UUID;
 
 import org.battlenight.api.game.type.GameType;
 import org.battlenight.api.map.GameMap;
@@ -12,7 +13,7 @@ public interface Battle {
 
     public void removePlayer(Player player);
 
-    public List<String> getPlayers();
+    public List<UUID> getPlayers();
 
     public GameType getGameType();
 
