@@ -1,6 +1,7 @@
 package me.limebyte.battlenight.api.battle;
 
 import java.util.Set;
+import java.util.UUID;
 
 import org.bukkit.entity.Player;
 
@@ -10,7 +11,7 @@ public interface Lobby {
 
     public boolean contains(Player player);
 
-    public Set<String> getPlayers();
+    public Set<UUID> getPlayers();
 
     public boolean isStarting();
 

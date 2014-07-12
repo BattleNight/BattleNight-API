@@ -1,6 +1,7 @@
 package me.limebyte.battlenight.api.managers;
 
 import java.util.List;
+import java.util.UUID;
 
 import me.limebyte.battlenight.api.battle.Arena;
 import me.limebyte.battlenight.api.battle.Team;
@@ -14,7 +15,7 @@ public interface ScoreManager {
 
     public void addTeam(Team team);
 
-    public List<String> getPlayers();
+    public List<UUID> getPlayers();
 
     public Scoreboard getScoreboard();
 

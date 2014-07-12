@@ -5,7 +5,7 @@
 	<name>BattleNight API</name>
 	<groupId>me.limebyte</groupId>
 	<artifactId>BattleNight-API</artifactId>
-	<version>2.1.0</version>
+	<version>2.2.0</version>
 	<url>https://github.com/BattleNight/BattleNight-API</url>
 	<inceptionYear>2013</inceptionYear>
 	<description>API for the BattleNight plugin.</description>
@@ -46,7 +46,7 @@
 		<dependency>
 			<groupId>org.bukkit</groupId>
 			<artifactId>bukkit</artifactId>
-			<version>LATEST</version>
+			<version>RELEASE</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>  

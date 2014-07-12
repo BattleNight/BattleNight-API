@@ -1,6 +1,7 @@
 package me.limebyte.battlenight.api.battle;
 
 import java.util.Set;
+import java.util.UUID;
 
 import me.limebyte.battlenight.api.util.Timer;
 
@@ -12,7 +13,8 @@ public interface Battle {
      * Adds the specified {@link Player} to the battle. This will return false
      * if it is unsuccessful.
      * 
-     * @param player the Player to add
+     * @param player
+     *            the Player to add
      * @return true if successful
      */
     public boolean addPlayer(Player player);
@@ -46,7 +48,7 @@ public interface Battle {
     /**
      * @return the players
      */
-    public Set<String> getPlayers();
+    public Set<UUID> getPlayers();
 
     public Timer getTimer();
 
@@ -61,7 +63,8 @@ public interface Battle {
      * Removes the specified {@link Player} to the battle. This will return
      * false if it is unsuccessful.
      * 
-     * @param player the Player to remove
+     * @param player
+     *            the Player to remove
      * @return true if successful
      */
     public boolean removePlayer(Player player);
@@ -78,7 +81,8 @@ public interface Battle {
      * Sets the {@link Arena} that will be used for this battle. The arena will
      * not be set if this battle is in progress.
      * 
-     * @param arena the arena to set
+     * @param arena
+     *            the arena to set
      * @see Arena
      */
     public void setArena(Arena arena);
@@ -88,7 +92,8 @@ public interface Battle {
      * value will prevent players from joining if the battle is full. This
      * cannot be set to a value that is less than the minimum.
      * 
-     * @param maxPlayers the maxPlayers to set
+     * @param maxPlayers
+     *            the maxPlayers to set
      */
     public void setMaxPlayers(int maxPlayers);
 
@@ -96,7 +101,8 @@ public interface Battle {
      * Sets the minimum amount of players the battle requires before it can be
      * started. This cannot be set below one.
      * 
-     * @param minPlayers the minPlayers to set
+     * @param minPlayers
+     *            the minPlayers to set
      */
     public void setMinPlayers(int minPlayers);
 

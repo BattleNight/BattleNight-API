@@ -1,6 +1,7 @@
 package me.limebyte.battlenight.api.battle;
 
 import java.util.Set;
+import java.util.UUID;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -15,7 +16,7 @@ public interface Team {
 
     public String getName();
 
-    public Set<String> getPlayers();
+    public Set<UUID> getPlayers();
 
     public int getScore();
 
